@@ -12,6 +12,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @RestController
+@RequestMapping(value = "/good")
 public class GoodController {
 
     private final int pageNum = 1;
@@ -21,7 +22,7 @@ public class GoodController {
     @Resource
     private IGoodService goodService;
 
-    @RequestMapping(value = "/good/list")
+    @RequestMapping(value = "/list")
     public String findGoodsByPage(@RequestParam(required = false) Integer pn, @RequestParam(required = false) Integer ps, @RequestParam(required = false) Boolean ib) {
         pn = pn == null ? pageNum : pn;
         ps = ps == null ? pageSize : ps;
