@@ -1,7 +1,6 @@
 package com.example.springboot.controller.test;
 
 import com.example.springboot.service.cache.ICacheTestService;
-import com.example.springboot.service.sell.IGoodService;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

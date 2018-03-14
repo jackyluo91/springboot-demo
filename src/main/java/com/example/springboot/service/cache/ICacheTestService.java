@@ -7,5 +7,6 @@ import java.util.List;
 public interface ICacheTestService {
 
     List<Good> get();
+
     void clear();
 }

@@ -3,8 +3,8 @@
 <mapper namespace="com.example.springboot.mapper.sell.GoodMapper">
 
     <resultMap id="BaseResultMap" type="com.example.springboot.entity.sell.Good">
-        <id column="id" property="id" />
-        <result column="name" property="name" />
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
     </resultMap>
 
     <sql id="base_column">
