@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.springboot.mapper.sell.GoodMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.springboot.entity.sell.Good">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+    </resultMap>
+
+    <sql id="base_column">
+        id, name
+    </sql>
+
+    <select id="selectGoodByPage" resultMap="BaseResultMap">
+        select
+        <include refid="base_column"/>
+        from good
+        order by id
+        limit ${startNum}, ${pageSize}
+    </select>
+
+</mapper>
