@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Home</title>
+</head>
+<body>
+    <h1>Home Page</h1>
+    <caption>Good List</caption>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="good : ${goods}">
+                <td th:text="|${good.id} test|"></td>
+                <td th:text="${good.name}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

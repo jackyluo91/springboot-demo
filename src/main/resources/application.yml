@@ -2,6 +2,10 @@ spring:
   profiles:
     #表示所用配置文件为application-dev.yml
     active: local
+  thymeleaf:
+    mode: HTML5
+    encoding: UTF-8
+    content-type: text/html
 mybatis:
   # ** 表示任意多级子目录
   mapper-locations: classpath:mapper/**/*Mapper.xml
